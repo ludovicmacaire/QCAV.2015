@@ -1,0 +1,697 @@
+% Use only LaTeX2e, calling the article.cls class and 12-point type.
+
+\documentclass[12pt]{article}
+%\documentclass[twoside,a4,12pt]{article}
+
+\usepackage{scicite}
+
+\usepackage{times}
+
+\usepackage{subfigure}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{epsf,graphicx}
+\usepackage{latexsym,amssymb}
+\usepackage{setspace,cite}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+\usepackage[french,british]{babel}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{url}
+%\documentclass{article}
+\usepackage{subfigure}
+\usepackage{amsmath}
+
+
+
+% The following parameters seem to provide a reasonable page setup.
+
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
+
+
+%The next command sets up an environment for the abstract to your paper.
+
+\newenvironment{sciabstract}{%
+\begin{quote} \bf}
+{\end{quote}}
+
+
+% If your reference list includes text notes as well as references,
+% include the following line; otherwise, comment it out.
+
+\renewcommand\refname{References and Notes}
+
+% The following lines set up an environment for the last note in the
+% reference list, which commonly includes acknowledgments of funding,
+% help, etc.  It's intended for users of BibTeX or the {thebibliography}
+% environment.  Users who are hand-coding their references at the end
+% using a list environment such as {enumerate} can simply add another
+% item at the end, and it will be numbered automatically.
+
+\newcounter{lastnote}
+\newenvironment{scilastnote}{%
+\setcounter{lastnote}{\value{enumiv}}%
+\addtocounter{lastnote}{+1}%
+\begin{list}%
+{\arabic{lastnote}.}
+{\setlength{\leftmargin}{.22in}}
+{\setlength{\labelsep}{.5em}}}
+{\end{list}}
+
+
+% Include your paper's title here
+
+\title{Schiempflug Camera Calibration using Pin-hole Model} 
+
+
+% Place the author information here.  Please hand-code the contact
+% information and notecalls; do *not* use \footnote commands.  Let the
+% author contact information appear immediately below the author names
+% as shown.  We would also prefer that you don't change the type-size
+% settings shown here.
+
+\author
+%\ast
+{Peter Fasogbon,$^{1,2\ast}$ others,$^{1}$ others$^{2}$\\
+\\
+\normalsize{$^{1}$Laboratoire Lagis, University of Lille1,}\\
+\normalsize{Villeneuve d'ascq, Cite scientifique, LILLE, FRANCE}\\
+\normalsize{$^{2}$SNCF Direction de l'inginerie, ---, Plane Saint Senis, FRANCE}\\
+\\
+\normalsize{$^\ast$ E-mail:  faspetpeak@yahoo.com}
+}
+
+% Include the date command, but leave its argument blank.
+
+\date{}
+
+
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%
+
+
+
+\begin{document} 
+
+% Double-space the manuscript.
+
+\baselineskip24pt
+
+% Make the title.
+
+\maketitle 
+
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[height=6cm, width=10cm]{figures/scheimpflug1.png}
+	\caption {Scheimpflug System Set-up}
+
+	\label{fig:scheimpflug2}
+\end{figure}
+
+
+
+
+\section*{Abstract}
+
+For any cameras to be in perfect focus, an object must be placed in a plane surface parallel to the image plane. However, having an image at sharp focus can be very difficult in the case when the object of interest is located in an oblique plane to the camera (i.e object plane not parallel to the image plane). It is the case when one is interested in capturing a very large object such as the facade of a tall building, and a decorative cobblestone pathway. The camera can be aimed upward at an angle which makes it difficult to bring the complete object of interest in focus.  Therefore, for a certain oblique plane to be in focus, the imaging set-up must obey "Scheimpflug's principle" \cite{Douglas}. This principle calls for three planes to intersect in a common line:
+
+
+
+\begin{itemize}
+\item  The oblique plane containing the observed objects,
+\item  The image plane,
+\item  The lens plane.
+\end{itemize}
+
+%\begin{figure}[htb]
+%%\begin{centering}
+%	\subfigure[]{\includegraphics[height=5cm, width=5cm]{figures/scheimpflug2.jpg}}
+%%\hfill
+%\subfigure[]{\includegraphics[height=4.4cm, width=7cm]{figures/scheimpflug1.jpg}}
+%%\hfill
+%	%\subfigure[Not mine]{\includegraphics[height=4cm, width=5cm]{figures/wirewearhof.jpg}}
+%	\caption{Classical System Set-up and Scheimpflug}
+%	\label{fig:scheimpflug2}
+%%\end{centering}
+%\end{figure}
+
+
+
+
+
+Scheimpflug principle as described in figure  \ref{fig:scheimpflug2} must obey thin lens equation $\frac{1}{d_{o}}+\frac{1}{d_{i}}=\frac{1}{f}$, where $f$ is the focal length, $d_{o}$ and $d_{i}$ are object and image distance with respect to the optical centre respectively. When the object of interest is located at an angle $\beta$ to the lens plane, we tilt the lens plane at an angle $\theta$ so that the focus plane is brought to the object location. \\
+
+
+For classical pin-hole model, the image plane is usually parallel to the lens plane $(O_c,[X_c,Y_c,Z_c])_c$ as shown in figure \ref{fig:scheim3}. However, for scheimpflug set-up, the image plane is tilted at a given angle ${\bf{\theta}}$ around the axis parallel to the $X_C$ axis but in  $O_I$  (see figure \ref{fig:scheim3}). This adjustment  ensures that the image plane, the lens plane and the object plane intersect at a line parallel to $X_c$ axis, denoted as  "scheimpflug line". 
+
+
+
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[height=6cm, width=12cm]{figures/scheimimg1.png}
+	\caption {Scheimpflug camera model illustration.}
+
+	\label{fig:scheim3}
+\end{figure}
+
+We distinguish the following coordinate systems:
+\begin{itemize}
+\item  The world coordinate system $(O_w[X_{w},Y_{w},Z_{w}])_w$,
+\item  The camera/lens coordinate system $(O_c[X_{c},Y_{c},Z_{c}])_c$,
+\item  The untilted image coordinate system,$(O_I[x,y,z])_I$, where $z=0$ for each point on the untilted image plane,
+\item  The tilted image coordinate system $(O_I[x_{t},y_{t},z_{t}])_t$, where $z_t=0$ for each point on the tilted image plane, 
+\item  The untilted pixel coordinate system $(O_p[u,v])_p$, 
+\item  The tilted pixel coordinate system, $(O_p[u_t,v_t])_p$
+\end{itemize}
+
+
+%The origins of the tilted and the perpendicular plane are the same, as the perpendicular plane can be arbitrarily placed.
+
+
+
+For a point $P$ along the object focus plane (see figure \ref{fig:scheim3}), lets denote $d_{i}= \|\vec {O_c~p_t^a}\|$ and $d_{o}= \|\vec {O_c~P^a}\|$ the image and object distance from the centre of the lens along the optical axis, where $p_t^a$ and $P^a$ are the projections of $p_t$ and $P$ to the optical axis.  The thin lens equations still hold for schiempflug set-up so that $\frac{1}{f}=\frac{1}{do}+\frac{1}{di}$. This is possible for any projected points on the tilted image plane from the object focus plane.  
+
+
+
+%, distorted point $p_d = (\tilde{x},\tilde{y})^T$, undistorted point $p_u = (x,y)^T$ , with a distorted point $p_t = (\tilde{x_{t}},\tilde{y_{t}})^T$ , with a distorted pixel $p_d = (\tilde{u},\tilde{v})^T$, undistorted $p_u = (u,v)^T$, distorted tilted $p_t = (\tilde{u_t},\tilde{v_t})^T$, and undistorted tilted $p_t = (u_t,v_t)^T$.
+
+In order to determine the 3D coordinates of world point $P$ from its projected point $p_t$ in the tilted image plane, we need to calibrate the used camera. Therefore, we have proposed a schiempflug calibration method based on pin-hole model assumptions. 
+
+
+%\subsection{Zhang Calibration}
+
+\subsection{Image formation for single scheimpflug angle}
+%We can now derive the scheimpflug camera model from the pinhole one. 
+Using homogeneous coordinate representation assuming no optical distortions, an object point $P (X_{w},Y_{w},Z_{w},1)_w $ is first projected to the point $p (x,y,0,1)_I $ in the untilted image plane as
+
+
+
+\begin{equation}  
+\lambda~p = \mathcal{K}_f \begin{bmatrix}
+\mathcal{R} \mid \mathcal{T}\\
+\end{bmatrix}  P
+\label{eqn:projm20}
+\end{equation}
+
+where intrinsic parameter $\mathcal{K}_f =\begin{bmatrix}
+f&0&0\\
+0&f&0\\
+0&0&1\\
+\end{bmatrix}$ , and extrinsic $\mathcal{R}$, and $\mathcal{T}$ [{\it 1}].\\
+
+In order to project the point $P$ onto the untilted image plane, we first need to simplify the optical distortion. If we consider radial distortions only, we can express the coordinates of the undistorted point $p (x,y,0)_I$ from the coordinates of the distorted one $\tilde{p}(\tilde{x},\tilde{y},0)_I$ in the same untilted plane as,
+
+\begin{equation}
+\begin{split}
+\tilde{p}(\tilde{x},\tilde{y},0)_I^T= p(x,y,0)_I^T + \delta_{(x,y,0)}  \\
+where~\delta_{(x,y,0)} =(\delta_x,\delta_y,0)
+\label{fig:dist2a}
+\end{split}
+\end{equation}
+
+%where $k_{i}'s$ are the radial distortion coefficients and $r=\sqrt{\tilde{x}^2+\tilde{y}^2}$ is the radial distance from the centre of the lens. Note that we can't easily express $p_d(\tilde{x}, \tilde{y})$ as a function of $p_u(x,y)$, but has been shown it can be approximated[link]. \\
+
+
+Now, let us model image formation on the tilted image plane. Assuming optical distortion, a ray originating from the the optical center $O_c$ of the camera intersects the tilted plane at $\tilde{p_t}(\tilde{x_t},  \tilde{y_t},0)_t$ and the untilted at $\tilde{p}(\tilde{x},\tilde{y},0)_I$ respectively. Without abuse of notations, we represent a distorted point $\tilde{p_t}(\tilde{x_t},\tilde{y_t},0)_t$ in the tilted plane as  $\tilde{p}_{c}^t(\tilde{X_c},\tilde{Y_c},\tilde{Z_c})_c$ in the camera coordinate system, likewise point $\tilde{p}(\tilde{x},\tilde{y},0)_I$ in the untilted image plane as $\tilde{p_{c}} (\tilde{X_c},\tilde{Y_c},\tilde{Z_c}=f)_c$. Therefore, the camera coordinate points $\tilde{p_{c}} (\tilde{X_c},\tilde{Y_c},\tilde{Z_c}=f)_c$ can be related to the untilted coordinate points $\tilde{p}(\tilde{x},\tilde{y},0)_I$ as,
+
+\begin{equation}
+\begin{split}
+\tilde{X_c}= \tilde{x} \\
+\tilde{Y_c}= \tilde{y} \\
+\tilde{Z_c}= f \\
+\end{split}
+\end{equation}
+
+We have formulate a projective transformation $\mathcal{K}_{c}^t$ under scheimpflug model. We first applied this matrix $\mathcal{K}_{c}^t$ of the distorted point $\tilde{p_{c}}(\tilde{X_c},\tilde{Y_c},f)_c$ to $\tilde{p}_{c}^t(\tilde{X_c},\tilde{Y_c},\tilde{Z_c})_c$ as shown below: %(see appendix \ref{subsect:proof1} for $\mathcal{K}_{c}^t$ matrix formulation): 
+
+
+\begin{equation}  
+\tilde{p}_{c}^t=\mathcal{K}_{c}^t \tilde{p_{c}},  ~ \text{where}~\mathcal{K}_{c}^t=\begin{bmatrix}
+f & 0 & 0\\
+0 & f & 0 \\
+0 & 0 & f \\
+0 & -tan~\theta & 1 
+\end{bmatrix} 
+\label{eqn:Ad20}
+\end{equation}
+
+
+%\begin{equation}  
+%\mathcal{K}_{c}^t=\begin{bmatrix}
+%f & 0 & 0\\
+%0 & f & 0 \\
+%0 & 0 & f \\
+%0 & -tan~\theta & 1 
+%\end{bmatrix} 
+%\label{eqn:Ad}
+%\end{equation}
+
+
+
+%We apply this matrix of the distorted point  $p_d = [\tilde{x},\tilde{y},\tilde{z},1]$ to  $p_t = [\tilde{x_t},\tilde{y_t},\tilde{z_t},1]$ in the tilted image plane (see the appendix for the ${\bf{K_{pt}}}$ matrix formulation).  We are actually looking for the position of point $p_t$ in lens coordinate system, thanks to this matrix. \\
+
+Then we express the camera coordinates of the point $\tilde{p}_{c}^t(\tilde{X_c},\tilde{Y_c},\tilde{Z_c})_c$   in the tilted image plane (i.e to have $\tilde{p_t} (\tilde{x_{t}},\tilde{y_{t}},0)_t$). This is done by applying rotation $\mathcal{R}_{s}$ with respect to the X-axis parametrised by angle $\theta$, preceded by a translation vector $\mathcal{T}_{s}$  (from $O_c$ to $O_I$). Finally we have our  $\mathcal{K}_{s}$ matrix as below,
+
+
+\begin{equation}  
+\begin{split}  
+\mathcal{K}_{s} = \begin{bmatrix}
+\mathcal{R}_{s} & \mathcal{T}_{s}\\
+0^{T} & 1\\
+\end{bmatrix}  =\begin{bmatrix}
+1& 0 & 0&0 \\
+0 & cos~\theta  & sin~\theta &0 \\
+0 & -sin~\theta & cos~\theta&0\\
+0 & 0 & 0 & 1
+\end{bmatrix} \begin{bmatrix}
+1 & 0 & 0&0 \\
+0 & 1 & 0&0 \\
+0 & 0 & 1&-f \\
+0 & 0 & 0 & 1 
+\end{bmatrix} \\
+\mathcal{K}_s=\begin{bmatrix}
+1& 0 & 0&0 \\
+0 & cos~\theta  & sin~\theta &-f~sin~\theta \\
+0 & -sin~\theta & cos~\theta&-f~cos~\theta\\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\end{split}  
+\label{eqn:Ad1}
+\end{equation}  
+
+
+Note that the two steps described earlier complete the scheimpflug image formation ("Intrinsic formation"). Hence, the point $\tilde{p_t}(\tilde{x_t},\tilde{y_t},0)_t$ on the tilted image plane is deduced from $\tilde{p_{c}} (\tilde{X_c},\tilde{Y_c},f)_c$ in the camera coordinate system as below
+
+\begin{equation}  
+\lambda \tilde{p_t} = \mathcal{K}_{s}\mathcal{K}_{c}^t\tilde{p_{c}}
+\label{eqn:sch1}
+\end{equation}
+
+
+A final conversion in pixel coordinates is effected with $\mathcal{K}_{b}$ matrix where $s_x,s_y,s_z$ are the pixel sizes and $(u_{0},v_{0})$ are the principal point coordinates in pixel unit. The pixel size $s_z$ can be changed to one since it will finally be cancelled out in the equation later on.
+
+\begin{equation}  
+\mathcal{K}_b=\begin{bmatrix}
+1/s_x & 0 & 0&u_{0} \\
+0 & 1/s_y & 0& v_{0} \\
+0 & 0 & 1/s_z&0 \\
+0& 0 & 0 & 1 
+\end{bmatrix} 
+\label{eqn:Ab3}
+\end{equation}
+
+Here is the full equation that that relates points $\tilde{p_{c}} (\tilde{X_c},\tilde{Y_c},f)_c$ to $\tilde{p_t}(\tilde{u_t},\tilde{v_t})_p$ in pixel coordinates:
+
+\begin{equation}  
+\lambda \tilde{p_t} = \mathcal{K}_{b} \mathcal{K}_{s}\mathcal{K}_{c}^t\tilde{p_{c}}\\
+\label{eqn:sch1}
+\end{equation}
+
+\begin{equation}  
+\lambda  \begin{bmatrix}
+\tilde{u_t}\\
+\tilde{v_t}\\
+0\\
+1\\
+\end{bmatrix} =\begin{bmatrix}
+1/s_x & 0 & 0&u_{0} \\
+0 & 1/s_y & 0& v_{0} \\
+0 & 0 & 1&0 \\
+0& 0 & 0 & 1 
+\end{bmatrix} \begin{bmatrix}
+1& 0 & 0&0 \\
+0 & cos~\theta & sin~\theta  & -f~sin~\theta \\
+0 & -sin~\theta & cos~\theta&-f~cos~\theta\\
+0 & 0 & 0 & 1
+\end{bmatrix} \begin{bmatrix}
+f & 0 & 0\\
+0 & f & 0 \\
+0 & 0 & f\\
+0 & -tan~\theta & 1 
+\end{bmatrix} \begin{bmatrix}
+\tilde{X_c}\\
+\tilde{Y_c}\\
+f\\
+\end{bmatrix}
+\label{eqn:sch28}
+\end{equation}
+
+
+
+Finally, to obtain $p_t(u_t,v_t)_p$ from $P(X_c,Y_c,Z_c)_c$ under pin-hole model assumption, we have to apply successively equation \ref{eqn:projm20}, \ref{fig:dist2a} and \ref{eqn:sch28}. Therefore, the full scheimpflug pin-hole model is shown thus,
+
+\begin{equation}  
+\begin{split}
+\begin{bmatrix}
+X_c\\
+Y_c\\
+Z_c\\
+\end{bmatrix} =\begin{bmatrix}
+r_{11}& r_{12} & r_{13}&t_x \\
+r_{21}& r_{22} & r_{23}&t_y \\
+r_{31}& r_{32} & r_{33}&t_z
+\end{bmatrix}  \begin{bmatrix}
+X\\
+Y\\
+Z\\
+1
+\end{bmatrix}\\
+\lambda\begin{bmatrix}
+x\\
+y\\
+1\\
+\end{bmatrix} =\begin{bmatrix}
+f& 0 & 0 \\
+0& f & 0 \\
+0& 0 & 1
+\end{bmatrix}  \begin{bmatrix}
+X_c\\
+Y_c\\
+Z_c
+\end{bmatrix}\\
+\lambda\begin{bmatrix}
+u_t\\
+v_t\\
+1\\
+\end{bmatrix} =\begin{bmatrix}
+1/s_x & 0 & 0&u_{0} \\
+0 & 1/s_y & 0& v_{0} \\
+0 & 0 & 0&0 \\
+0& 0 & 0 & 1 
+\end{bmatrix}\begin{bmatrix}
+1& 0 & 0&0 \\
+0 & cos~\theta & sin~\theta  & -f~sin~\theta \\
+0 & -sin~\theta & cos~\theta&-f~cos~\theta\\
+0 & 0 & 0 & 1
+\end{bmatrix} \begin{bmatrix}
+f & 0 & 0\\
+0 & f & 0 \\
+0 & 0 & f\\
+0 & -tan~\theta & 1 
+\end{bmatrix} \begin{bmatrix}
+x\\
+y\\
+f\\
+\end{bmatrix}
+\end{split}
+\label{eqn:sch2o}
+\end{equation}
+
+
+
+
+
+
+%\section*{Formatting Citations}
+%
+%Citations can be handled in one of three ways.  The most
+%straightforward (albeit labor-intensive) would be to hardwire your
+%citations into your \LaTeX\ source, as you would if you were using an
+%ordinary word processor.  Thus, your code might look something like
+%this:
+%
+%
+%\begin{quote}
+%\begin{verbatim}
+%However, this record of the solar nebula may have been
+%partly erased by the complex history of the meteorite
+%parent bodies, which includes collision-induced shock,
+%thermal metamorphism, and aqueous alteration
+%({\it 1, 2, 5--7\/}).
+%\end{verbatim}
+%\end{quote}
+%
+%
+%\noindent Compiled, the last two lines of the code above, of course, would give notecalls in {\it Science\/} style:
+%
+%\begin{quote}
+%\ldots thermal metamorphism, and aqueous alteration ({\it 1, 2, 5--7\/}).
+%\end{quote}
+%
+%Under the same logic, the author could set up his or her reference list as a simple enumeration,
+%
+%\begin{quote}
+%\begin{verbatim}
+%{\bf References }
+%
+%\begin{enumerate}
+%
+%
+%
+%@article{Zhang:2000:FN,
+% author = {Zhang, Zhengyou},
+% title = {A Flexible New Technique for Camera Calibration},
+% journal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+% issue_date = {November 2000},
+% volume = {22},
+% number = {11},
+% month = nov,
+% year = {2000},
+% issn = {0162-8828},
+% pages = {1330--1334},
+% numpages = {5},
+% url = {http://dx.doi.org/10.1109/34.888718},
+% doi = {10.1109/34.888718},
+% acmid = {357025},
+% publisher = {IEEE Computer Society},
+% address = {Washington, DC, USA},
+% keywords = {Camera calibration, calibration from planes, 2D pattern, flexible plane-based calibration, absolute conic, projective mapping, lens distortion, closed-form solution, maximum likelihood estimation, flexible setup.},
+%} 
+%
+%
+%
+%
+%
+%
+%\end{enumerate}
+%\end{verbatim}
+%\end{quote}
+
+\noindent .\\
+
+\begin{quote}
+{\bf References }
+
+\begin{enumerate}
+\item Zhengyou Zhang, {\it A Flexible New Technique for Camera Calibration\/} (IEEE Trans. Pattern Anal. Mach. Intell., Pages 1330--1334, November, 2000).
+
+%\item G. Gamow, {\it The Constitution of Atomic Nuclei and
+%Radioactivity\/} (Oxford Univ. Press, New York, 1931).
+%\item W. Heisenberg and W. Pauli, {\it Zeitschr.\ f.\ Physik} {\bf 56},
+%1 (1929).
+\end{enumerate}
+\end{quote}
+
+%That's not a solution that's likely to appeal to everyone, however ---
+%especially not to users of B{\small{IB}}\TeX\ \cite{inclme}.  If you
+%are a B{\small{IB}}\TeX\ user, we suggest that you use the
+%\texttt{Science.bst} bibliography style file and the
+%\texttt{scicite.sty} package, both of which we are downloadable from our author help site
+%(http://www.sciencemag.org/about/authors/prep/TeX\_help/).  You can also
+%generate your reference lists by using the list environment
+%\texttt{\{thebibliography\}} at the end of your source document; here
+%again, you may find the \texttt{scicite.sty} file useful.
+%
+%Whether you use B{\small{IB}}\TeX\ or \texttt{\{thebibliography\}}, be
+%very careful about how you set up your in-text reference calls and
+%notecalls.  In particular, observe the following requirements:
+%
+%\begin{enumerate}
+%\item Please follow the style for references outlined at our author
+%  help site and embodied in recent issues of {\it Science}.  Each
+%  citation number should refer to a single reference; please do not
+%  concatenate several references under a single number.
+%\item Please cite your references and notes in text {\it only\/} using
+%  the standard \LaTeX\ \verb+\cite+ command, not another command
+%  driven by outside macros.
+%\item Please separate multiple citations within a single \verb+\cite+
+%  command using commas only; there should be {\it no space\/}
+%  between reference keynames.  That is, if you are citing two
+%  papers whose bibliography keys are \texttt{keyname1} and
+%  \texttt{keyname2}, the in-text cite should read
+%  \verb+\cite{keyname1,keyname2}+, {\it not\/}
+%  \verb+\cite{keyname1, keyname2}+.
+%\end{enumerate}
+%
+%\noindent Failure to follow these guidelines could lead
+%to the omission of the references in an accepted paper when the source
+%file is translated to Word via HTML.
+%
+%\section*{Handling Math, Tables, and Figures}
+%
+%Following are a few things to keep in mind in coding equations,
+%tables, and figures for submission to {\it Science}.
+%
+%\paragraph*{In-line math.}  The utility that we use for converting
+%from \LaTeX\ to HTML handles in-line math relatively well.  It is best
+%to avoid using built-up fractions in in-line equations, and going for
+%the more boring ``slash'' presentation whenever possible --- that is,
+%for \verb+$a/b$+ (which comes out as $a/b$) rather than
+%\verb+$\frac{a}{b}$+ (which compiles as $\frac{a}{b}$).  Likewise,
+%HTML isn't tooled to handle certain overaccented special characters
+%in-line; for $\hat{\alpha}$ (coded \verb+$\hat{\alpha}$+), for
+%example, the HTML translation code will return [\^{}$(\alpha)$].
+%Don't drive yourself crazy --- but if it's possible to avoid such
+%constructs, please do so.  Please do not code arrays or matrices as
+%in-line math; display them instead.  And please keep your coding as
+%\TeX-y as possible --- avoid using specialized math macro packages
+%like \texttt{amstex.sty}.
+%
+%\paragraph*{Displayed math.} Our HTML converter sets up \TeX\
+%displayed equations using nested HTML tables.  That works well for an
+%HTML presentation, but Word chokes when it comes across a nested
+%table in an HTML file.  We surmount that problem by simply cutting the
+%displayed equations out of the HTML before it's imported into Word,
+%and then replacing them in the Word document using either images or
+%equations generated by a Word equation editor.  Strictly speaking,
+%this procedure doesn't bear on how you should prepare your manuscript
+%--- although, for reasons best consigned to a note \cite{nattex}, we'd
+%prefer that you use native \TeX\ commands within displayed-math
+%environments, rather than \LaTeX\ sub-environments.
+%
+%\paragraph*{Tables.}  The HTML converter that we use seems to handle
+%reasonably well simple tables generated using the \LaTeX\
+%\texttt{\{tabular\}} environment.  For very complicated tables, you
+%may want to consider generating them in a word processing program and
+%including them as a separate file.
+%
+%\paragraph*{Figures.}  Figure callouts within the text should not be
+%in the form of \LaTeX\ references, but should simply be typed in ---
+%that is, \verb+(Fig. 1)+ rather than \verb+\ref{fig1}+.  For the
+%figures themselves, treatment can differ depending on whether the
+%manuscript is an initial submission or a final revision for acceptance
+%and publication.  For an initial submission and review copy, you can
+%use the \LaTeX\ \verb+{figure}+ environment and the
+%\verb+\includegraphics+ command to include your PostScript figures at
+%the end of the compiled PostScript file.  For the final revision,
+%however, the \verb+{figure}+ environment should {\it not\/} be used;
+%instead, the figure captions themselves should be typed in as regular
+%text at the end of the source file (an example is included here), and
+%the figures should be uploaded separately according to the Art
+%Department's instructions.
+%
+%
+%\section*{What to Send In}
+%
+%What you should send to {\it Science\/} will depend on the stage your manuscript is in:
+%
+%\begin{itemize}
+%\item {\bf Important:} If you're sending in the initial submission of
+%  your manuscript (that is, the copy for evaluation and peer review),
+%  please send in {\it only\/} a PostScript or PDF version of the
+%  compiled file (including figures).  Please do not send in the \TeX\ 
+%  source, \texttt{.sty}, \texttt{.bbl}, or other associated files with
+%  your initial submission.  (For more information, please see the
+%  instructions at our Web submission site,
+%  http://www.submit2science.org/ .)
+%\item When the time comes for you to send in your revised final
+%  manuscript (i.e., after peer review), we require that you include
+%  all source files and generated files in your upload.  Thus, if the
+%  name of your main source document is \texttt{ltxfile.tex}, you
+%  need to include:
+%\begin{itemize}
+%\item \texttt{ltxfile.tex}.
+%\item \texttt{ltxfile.aux}, the auxilliary file generated by the
+%  compilation.
+%\item A PostScript file (compiled using \texttt{dvips} or some other
+%  driver) of the \texttt{.dvi} file generated from
+%  \texttt{ltxfile.tex}, or a PDF file distilled from that
+%  PostScript.  You do not need to include the actual \texttt{.dvi}
+%  file in your upload.
+%\item From B{\small{IB}}\TeX\ users, your bibliography (\texttt{.bib})
+%  file, {\it and\/} the generated file \texttt{ltxfile.bbl} created
+%  when you run B{\small{IB}}\TeX.
+%\item Any additional \texttt{.sty} and \texttt{.bst} files called by
+%  the source code (though, for reasons noted earlier, we {\it
+%    strongly\/} discourage the use of such files beyond those
+%  mentioned in this document).
+%\end{itemize}
+%\end{itemize}
+%
+%% Your references go at the end of the main text, and before the
+%% figures.  For this document we've used BibTeX, the .bib file
+%% scibib.bib, and the .bst file Science.bst.  The package scicite.sty
+%% was included to format the reference numbers according to *Science*
+%% style.
+%%
+%%   this is for BibTeX.  remove if you plan to write the references in the document
+%\bibliographystyle{plain}
+%\bibliography{mybiblio}
+%
+%%
+%%\bibliography{scibib}
+%%
+%%\bibliographystyle{Science}
+%
+%
+%
+%% Following is a new environment, {scilastnote}, that's defined in the
+%% preamble and that allows authors to add a reference at the end of the
+%% list that's not signaled in the text; such references are used in
+%% *Science* for acknowledgments of funding, help, etc.
+%
+%\begin{scilastnote}
+%\item We've included in the template file \texttt{scifile.tex} a new
+%environment, \texttt{\{scilastnote\}}, that generates a numbered final
+%citation without a corresponding signal in the text.  This environment
+%can be used to generate a final numbered reference containing
+%acknowledgments, sources of funding, and the like, per {\it Science\/}
+%style.
+%\end{scilastnote}
+
+
+
+
+% For your review copy (i.e., the file you initially send in for
+% evaluation), you can use the {figure} environment and the
+% \includegraphics command to stream your figures into the text, placing
+% all figures at the end.  For the final, revised manuscript for
+% acceptance and production, however, PostScript or other graphics
+% should not be streamed into your compliled file.  Instead, set
+% captions as simple paragraphs (with a \noindent tag), setting them
+% off from the rest of the text with a \clearpage as shown  below, and
+% submit figures as separate files according to the Art Department's
+% instructions.
+
+
+%\clearpage
+%
+%\noindent {\bf Fig. 1.} Please do not use figure environments to set
+%up your figures in the final (post-peer-review) draft, do not include graphics in your
+%source code, and do not cite figures in the text using \LaTeX\
+%\verb+\ref+ commands.  Instead, simply refer to the figure numbers in
+%the text per {\it Science\/} style, and include the list of captions at
+%the end of the document, coded as ordinary paragraphs as shown in the
+%\texttt{scifile.tex} template file.  Your actual figure files should
+%be submitted separately.
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

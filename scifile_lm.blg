@@ -1,0 +1,912 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: scifile_lm.aux
+The style file: elsarticle-num.bst
+Database file #1: myref.bib
+I was expecting a `,' or a `}'---line 21 of file myref.bib
+ :     
+ :     %note     = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 87 of file myref.bib
+ :     
+ :     %volume   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 111 of file myref.bib
+ :     
+ :     %volume   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 389 of file myref.bib
+ :  
+ :  %url = {http://dx.doi.org/10.1109/34.888718},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 499 of file myref.bib
+ : 
+ : %     author    = {Darzi, A. and Munz, Y.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 517 of file myref.bib
+ : 
+ : %author = {Gabriel Y. Sirat},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 551 of file myref.bib
+ : 
+ : % author = {Kutulakos, Kiriakos N. and Steger, Eron},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 591 of file myref.bib
+ : 
+ : %  author =       {Zongker and Douglas E. and Werner and Dawn M. and Curless and Brian and Salesin and David H.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 621 of file myref.bib
+ : 
+ : %    author = {Bardsley, Daniel and Li, Bai},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 645 of file myref.bib
+ : 
+ : %  author =       {Zhengyou Zhang},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 663 of file myref.bib
+ : 
+ : %    address = {Dresden, Germany},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 695 of file myref.bib
+ : 
+ : %    author = {W-y Wu and C-c Hou},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 707 of file myref.bib
+ : 
+ : %  author =       {Chris Wynn},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 719 of file myref.bib
+ : 
+ : %  author =       {Cook and R. L. and Torrance and K. E.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 753 of file myref.bib
+ : 
+ : %  title = {Making Shaders More Physically Plausible},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 779 of file myref.bib
+ : 
+ : % author = {Ward, Gregory J.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 819 of file myref.bib
+ : 
+ : %  author =       {Abed Malti and Adrien Bartoli},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 843 of file myref.bib
+ : 
+ : %  author =       {Abhijeet Ghosh and Shruthi Achutha and Wolfgang Heidrich and Matthew O Toole},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 865 of file myref.bib
+ : 
+ : %   author  = {Christophe Hery and Ravi Ramamoorthi},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 891 of file myref.bib
+ : 
+ : %    address = {New York, NY, USA},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 933 of file myref.bib
+ : 
+ : %    Author = {Chandraker, Manmohan and Bai, Jiamin and Ramamoorthi, Ravi},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 963 of file myref.bib
+ : 
+ : %  year = 2012,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 979 of file myref.bib
+ : 
+ : % author = {Ramamoorthi, Ravi and Mahajan, Dhruv and Belhumeur, Peter},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1017 of file myref.bib
+ : 
+ : %    author = {Adrien Treuille and Aaron Hertzmann and Steven M. Seitz},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1033 of file myref.bib
+ : 
+ : %    author = {Aaron Hertzmann and Steven M. Seitz},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1051 of file myref.bib
+ : 
+ : % author = {Seitz, Steven M. and Dyer, Charles R.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1091 of file myref.bib
+ : 
+ : %  author =       {Tongbo Chen and Hendrik P. A. Lensch and Christian Fuchs and Hans-peter Seidel and Mpi Informatik},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1113 of file myref.bib
+ : 
+ : %  added-at = {2009-12-31T00:00:00.000+0100},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1155 of file myref.bib
+ : 
+ : % author = {Osadchy, Margarita and Keren, Daniel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1195 of file myref.bib
+ : 
+ : %author={Kuk-Jin Yoon and Yoojin Choi and In So Kweon},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1219 of file myref.bib
+ : 
+ : % author = {Yoon, Kuk-Jin and Kweon, In-So},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1253 of file myref.bib
+ : 
+ : % author = {Nayar, Shree K. and Fang, Xi-Sheng and Boult, Terrance},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1291 of file myref.bib
+ : 
+ : % author = {Wolff, Lawrence B. and Boult, Terrance E.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1331 of file myref.bib
+ : 
+ : % author = {Li, Yuanzhen and Lin, Stephen and Lu, Hanqing and Kang, Sing Bing and Shum, Heung-Yeung},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1359 of file myref.bib
+ : 
+ : %    author = {Stephen Lin and Yuanzhen Li and Sing Bing Kang and Xin Tong},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1375 of file myref.bib
+ : 
+ : %  author =       {S. Borromeo and J. L. Aparicio},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1423 of file myref.bib
+ : 
+ : %author = {S.K. Nayar and K. Ikeuchi and T. Kanade},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1449 of file myref.bib
+ : 
+ : %  author =       {S. Borromeo and J. L. Aparicio and P. M. Martinez},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1499 of file myref.bib
+ : 
+ : %  author =       { H. Hofler and M. Dambacher and N. Dimopoulos and  V. Jetter},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1523 of file myref.bib
+ : 
+ : %  author =       {A. Fumi and A. Forgione},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1613 of file myref.bib
+ : 
+ : %author={Borromeo, S. and Aparicio, J.L.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1639 of file myref.bib
+ : 
+ : %author = "J. M. Van Gigch and  C. Smorenburg and A. W. Benschop",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1671 of file myref.bib
+ : 
+ : %  author =       {Nobuyuki Koshiba},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1695 of file myref.bib
+ : 
+ : %  author =       {Yu.V. Chugui1 and A.G. Verkhogliad and V.S. Bazin and S.V. Kalichkin and V.E. Kalikin and S.N. Makarov and I.A. Vykhristyuk1},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1735 of file myref.bib
+ : 
+ : %author = {Borromeo  S. and Aparicio, J. L.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1761 of file myref.bib
+ : 
+ : %  author =       {T.Shimada and T. Kohida and Y. Satoh.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1783 of file myref.bib
+ : 
+ : %author={Rav.M. Galiulin and Rish.M.Galiulin and J.M.Bakirov and V.V.Bydanov and D.R.Bogdanov and D.V.Naumov.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1803 of file myref.bib
+ : 
+ : %author={Kusumi, S. and Nagasawa, H. and Mochizuka, H.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1831 of file myref.bib
+ : 
+ : %author={K.Horiki  et  al},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1851 of file myref.bib
+ : 
+ : %  author =       {F. Montreuil and R. Kouadio and C. Petitjean and L. Heutte and V. Delcourt},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1899 of file myref.bib
+ : 
+ : %    hal_id = {hal-00474613},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1927 of file myref.bib
+ : 
+ : %  author =       {C. Petitjean and L. Heutte and R. Kouadio and V. Delcourt},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1979 of file myref.bib
+ : 
+ : %  author =       {S. Avronsart},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2001 of file myref.bib
+ : 
+ : %  author =       {Pierre-Antoine Lacaze and Stephane Avronsart},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2023 of file myref.bib
+ : 
+ : %  author =       {SNCF.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2037 of file myref.bib
+ : 
+ : %author = {Mairesse, Fabrice and Sliwa, Tadeusz M. and Roy, Michaël and Voisin, Yvon},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2063 of file myref.bib
+ : 
+ : %  author =       {Uwe Richter and Richard Schneider},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2081 of file myref.bib
+ : 
+ : %author={Rav.M. Galiulin and Rish.M.Galiulin and J.M.Bakirov and V.V.Bydanov},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2101 of file myref.bib
+ : 
+ : %  author =       {Schneider, Richard and Thu¨rmel, Peter and Stockmann, Michael},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2127 of file myref.bib
+ : 
+ : %  author =       {S.Tabayashi and M. Niwakawa and M. Ikeda and T. Koyama},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2155 of file myref.bib
+ : 
+ : %  author =       {Shunichi Kusumi},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2181 of file myref.bib
+ : 
+ : %  author =       {Grabowski, R. and Schweizer,W. and Molnar, J. and Unger, L.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2203 of file myref.bib
+ : 
+ : %      AUTHOR = "Mermec Group",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2219 of file myref.bib
+ : 
+ : %      title  = "Using {\LaTeX} for Your Thesis",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2233 of file myref.bib
+ : 
+ : %      author = "Selectra Group",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2249 of file myref.bib
+ : 
+ : %      author = "Siemens Nwe",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2267 of file myref.bib
+ : 
+ : %      AUTHOR = "Meidensha Corporation",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2283 of file myref.bib
+ : 
+ : %      author = "Railway Technical Research Institute (RTRI), Japan",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2299 of file myref.bib
+ : 
+ : %      AUTHOR = "Tokyu Corporation",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2315 of file myref.bib
+ : 
+ : %      AUTHOR = "Eurailscout",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2331 of file myref.bib
+ : 
+ : %      AUTHOR = "Bvsys system",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2347 of file myref.bib
+ : 
+ : %  author = "Peston, Robert",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2365 of file myref.bib
+ : 
+ : % author = {Lanman, Douglas and Taubin, Gabriel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2399 of file myref.bib
+ : 
+ : %  author     =  "Christian {Liska} and Robert {Sablatnig}",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2423 of file myref.bib
+ : 
+ : %  author     =  "John {Laurent} and Mario {Talbot} and Michel {Doucet} ",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2437 of file myref.bib
+ : 
+ : %    author = {Bajard, Alban and Aubreton, Olivier and Bokhabrine, Youssef and Verney, Benjamin and Eren, G\"{o}nen and Er\c{c}il, Ayt\"{u}l and Truchetet, Frederic},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2477 of file myref.bib
+ : 
+ : % author = {Rantoson, Rindra and Stolz, Christophe and Fofi, David and Meriaudeau, Fabrice},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2511 of file myref.bib
+ : 
+ : %    hal_id = {hal-00635539},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2549 of file myref.bib
+ : 
+ : % author = {Narasimhan, Srinivasa G. and Nayar, Shree K. and Sun, Bo and Koppal, Sanjeev J.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2581 of file myref.bib
+ : 
+ : %   author = "Srinivasa G Narasimhan and S.K. Nayar",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2601 of file myref.bib
+ : 
+ : %author = {Ivo Ihrke and Kiriakos N. Kutulakos and Hendrik P. A. Lensch and Marcus Magnor and Wolfgang Heidrich},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2617 of file myref.bib
+ : 
+ : %    author = {Olivier Morel and Christophe Stolz and Fabrice Meriaudeau and Patrick Gorria},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2635 of file myref.bib
+ : 
+ : %author = {Morel, Olivier and Meriaudeau, Fabrice and Stolz, Christophe and Gorria, Patrick},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2659 of file myref.bib
+ : 
+ : % author = {Zhang, Zhong and Ren, Shiqing and Tetsuo, Miyake and Fujiwara, Hisanaga and Imamura, Takashi},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2691 of file myref.bib
+ : 
+ : %    author = {Johnny Park and Avinash C. Kak},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2707 of file myref.bib
+ : 
+ : %  author = "Diego Nehab and Tim Weyrich and Szymon Rusinkiewicz",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2725 of file myref.bib
+ : 
+ : % author = {Hiroshi Kawasaki and Ryo Furukawa and Ryusuke Sagawa and Yuya Ohta and Kazuhiro Sakashita and Ryota Zushi and Yasushi Yagi and Naoki Asada},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2743 of file myref.bib
+ : 
+ : %author={Furukawa, R. and Sagawa, R. and Kawasaki, H. and Sakashita, K. and Yagi, Y. and Asada, N.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2767 of file myref.bib
+ : 
+ : %author={Sakashita, K. and Yagi, Y. and Sagawa, R. and Furukawa, R. and Kawasaki, H.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2791 of file myref.bib
+ : 
+ : %author={Jing Xu and Ning Xi and Chi Zhang and Quan Shi},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2815 of file myref.bib
+ : 
+ : %title = "A simple calibration method for structured light-based 3D profile measurement",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2849 of file myref.bib
+ : 
+ : %title = "Rapid 3D surface profile measurement of industrial parts using two-level structured light patterns",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2883 of file myref.bib
+ : 
+ : %   author = {{Xu}, J. and {Liu}, S. and {Wan}, A. and {Gao}, B. and {Yi}, Q. and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2911 of file myref.bib
+ : 
+ : %title = "Surface measurement using active vision and light scattering",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2947 of file myref.bib
+ : 
+ : %   author = {{Lu}, R.-S. and {Forrest}, A.K.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2973 of file myref.bib
+ : 
+ : %   author = {{Zhang}, X. and {Li}, Y. and {Zhu}, L.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2999 of file myref.bib
+ : 
+ : %author = {Xu Zhang and Limin Zhu and Youfu Li},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3029 of file myref.bib
+ : 
+ : %    author = {J. Salvi and J. Batlle and E. Mouaddib},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3041 of file myref.bib
+ : 
+ : %title = "Optimised De Bruijn patterns for one-shot shape acquisition",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3075 of file myref.bib
+ : 
+ : % author = {Pribani\'{c}, Tomislav and Mrvo\v{s}, Sa\v{s}a and Salvi, Joaquim},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3115 of file myref.bib
+ : 
+ : %   author = {{Bruno}, F. and {Bianco}, G. and {Muzzupappa}, M. and {Barone}, S. and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3143 of file myref.bib
+ : 
+ : %title = "Large 3D free surface measurement using a mobile coded light-based stereo vision system",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3185 of file myref.bib
+ : 
+ : % author = {Guan, Chun and Hassebrook, Laurence G. and Lau, Daniel L. and Yalla, Veeraganesh},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3225 of file myref.bib
+ : 
+ : %author={Guan Congrong and Jin Weiqi and Yu Xiaoyang and Wu Haibin},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3249 of file myref.bib
+ : 
+ : %author={Ulusoy, A.O. and Calakli, F. and Taubin, G.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3273 of file myref.bib
+ : 
+ : %author={Ulusoy, A.O. and Calakli, F. and Taubin, G.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3297 of file myref.bib
+ : 
+ : %    author = {Hamdan Hemayed And and H. M. Hamdan and E. E. Hemayed and A. A. Farag},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3313 of file myref.bib
+ : 
+ : %author={Furukawa, R. and Kawasaki, H.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3337 of file myref.bib
+ : 
+ : %author={Fofi, D. and Salvi, J. and Mouaddib, E.M.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3361 of file myref.bib
+ : 
+ : % author = {Konig, Soren and Gumhold, Stefan},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3401 of file myref.bib
+ : 
+ : % author = {Taguchi, Yuichi and Agrawal, Amit and Tuzel, Oncel},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3437 of file myref.bib
+ : 
+ : %author={Weise, T. and Leibe, B. and Van Gool, L.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3461 of file myref.bib
+ : 
+ : %title = "A state of the art in structured light patterns for surface profilometry",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3503 of file myref.bib
+ : 
+ : % AUTHOR  = {Li Zhang and Brian Curless and Steven M. Seitz},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3523 of file myref.bib
+ : 
+ : % author = {Koninckx, Thomas P. and Van Gool, Luc},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3563 of file myref.bib
+ : 
+ : %author={Koninckx, T.P. and Geys, I. and Jaeggli, T. and Van Gool, L.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3587 of file myref.bib
+ : 
+ : %author={Koninckx, T.P. and Peers, P. and Dutre, P. and Van Gool, L.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3611 of file myref.bib
+ : 
+ : %author={Hao Li and Straub, R. and Prautzsch, H.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3635 of file myref.bib
+ : 
+ : %    author = {Yi Xu and Daniel G. Aliaga},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3647 of file myref.bib
+ : 
+ : %author={Goodarzi, F. and Shokouhi, S.B.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3671 of file myref.bib
+ : 
+ : %author={Fechteler, P. and Eisert, P.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3695 of file myref.bib
+ : 
+ : %author={Jing Xu and Ning Xi and Chi Zhang and Quan Shi},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3719 of file myref.bib
+ : 
+ : %author={Bei Pan and Qiu Guan and Xin Wang and Chen, S.Y.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3743 of file myref.bib
+ : 
+ : %author={Maurice, X. and Graebling, P. and Doignon, C.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3767 of file myref.bib
+ : 
+ : %author={Tan Qimeng and Lu Naiguang and Lou Xiaoping and Yan Bixi and Lin Yimin},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3791 of file myref.bib
+ : 
+ : %author = {Changsoo Je and Sang Wook Lee and Rae-hong Park},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3811 of file myref.bib
+ : 
+ : %author={Aliaga, D.G. and Yi Xu},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3835 of file myref.bib
+ : 
+ : %author = {Kai Liu and Yongchang Wang and Daniel L. Lau and Qi Hao and Laurence G. Hassebrook},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3867 of file myref.bib
+ : 
+ : %author = {Daniel L. Lau and Kai Liu and Laurence G. Hassebrook},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3899 of file myref.bib
+ : 
+ : %author = {Yongchang Wang and Kai Liu and Daniel L. Lau and Qi Hao and Laurence G. Hassebrook},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3931 of file myref.bib
+ : 
+ : % author = {Narasimhan, Srinivasa G. and Koppal, Sanjeev J. and Yamazaki, Shuntaro},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 3965 of file myref.bib
+ : 
+ : %   abstract    = { },
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4023 of file myref.bib
+ : 
+ : %      title = {Hamming Color Code for Dense and Robust One-shot 3D Scanning}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4047 of file myref.bib
+ : 
+ : %author={Scharstein, D. and Szeliski, R.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4071 of file myref.bib
+ : 
+ : % author = {Tardif, Jean-Philippe and Roy, Sebastien},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4103 of file myref.bib
+ : 
+ : %title = "Recent progresses on real-time 3D shape measurement using digital fringe projection techniques",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4145 of file myref.bib
+ : 
+ : %author = {Kerstein, T. and Laurowski, M. and Klein, P. and Weyrich M. and Roth, H. and Wahrburg, J.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4175 of file myref.bib
+ : 
+ : % author = {Rohith, M. V. and Somanath, Gowri and Kambhamettu, Chandra and Geiger, Cathleen and Finnegan, David},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4207 of file myref.bib
+ : 
+ : %   author = {{Pan}, X.-T. and {Zhang}, Y.-F. and {Meng}, F.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4233 of file myref.bib
+ : 
+ : %author={Cui, Haihua and Dai, Ning and Yuan, Tianran and Cheng, Xiaosheng and Liao, Wenhe},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4257 of file myref.bib
+ : 
+ : %author={Zhengzhen Liu and Tianding Chen},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4281 of file myref.bib
+ : 
+ : %author={Nishie, K. and Sato, J.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4305 of file myref.bib
+ : 
+ : %year={2002},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4337 of file myref.bib
+ : 
+ : %title = "Determination of edge correspondence using color codes for one-shot shape acquisition",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4371 of file myref.bib
+ : 
+ : % author = {d\&\#39;Angelo, P. and W\"{o}hler, C.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4405 of file myref.bib
+ : 
+ : %author={Furukawa, Y. and Ponce, J.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4429 of file myref.bib
+ : 
+ : %author = {Fofi, David and Sliwa, Tadeusz and Voisin, Yvon},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4453 of file myref.bib
+ : 
+ : %year={2010},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4483 of file myref.bib
+ : 
+ : %author = {Song Zhang and Peisen S. Huang},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4505 of file myref.bib
+ : 
+ : %  author = "Olaf Hall-Holt and Szymon Rusinkiewicz",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4523 of file myref.bib
+ : 
+ : % author = {Beeler, Thabo and Bickel, Bernd and Beardsley, Paul and Sumner, Bob and Gross, Markus},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4559 of file myref.bib
+ : 
+ : %author={Feris, R. and Raskar, R. and Longbin Chen and Kar-Han Tan and Turk, M.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4583 of file myref.bib
+ : 
+ : %author = {Abramovich, Gil and Harding, Kevin and Manickam, Swaminathan and Czechowski, Joseph and Paruchuru, Vijay and Tait, Robert and Nafis, Christopher and Vemury, Arun},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4607 of file myref.bib
+ : 
+ : %     author = {Weinmann, Michael and Schwartz, Christopher and Ruiters, Roland and Klein, Reinhard},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4651 of file myref.bib
+ : 
+ : %  added-at = {2012-07-04T00:00:00.000+0200},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4695 of file myref.bib
+ : 
+ : %author = {Yoon-Chang Park and Seong-Joon Ahn and Moon-Ho Kang and Young-Chul Kwon and Seung-Joon Ahn},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4725 of file myref.bib
+ : 
+ : % author = {Koppal, Sanjeev J. and Yamazaki, Shuntaro and Narasimhan, Srinivasa G.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4765 of file myref.bib
+ : 
+ : %author = {Song Zhang and Daniel Van Der Weide and James Oliver},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4797 of file myref.bib
+ : 
+ : %author = {Yuanzheng Gong and Song Zhang},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4829 of file myref.bib
+ : 
+ : %author={Munkelt, C. and Schmidt, I. and Brauer-Burchardt, C. and Kuhmstedt, P. and Notni, G.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4853 of file myref.bib
+ : 
+ : %title = "High resolution acquisition of detailed surfaces with lens-shifted structured light",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4885 of file myref.bib
+ : 
+ : %author = {Grosse, Marcus and Schaffer, Martin and Harendt, Bastian and Kowarschik, Richard},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4911 of file myref.bib
+ : 
+ : %author = "Ralph {Schmidt} and Christian {Heipke} and Manfred {Wiggenhagen} and Bernd Michael {Wolf}",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4941 of file myref.bib
+ : 
+ : %   author = {{Chang}, I.-C. and {Huang}, C.-L. and {Hsueh}, W.-J. and {Lin}, H.-C. and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4971 of file myref.bib
+ : 
+ : %author = {Yung-Sheng Chen and Bor-Tow Chen},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5003 of file myref.bib
+ : 
+ : %author = {Javier Garc\'{i}a and Zeev Zalevsky and Pascuala Garc\'{i}a-Mart\'{i}nez and Carlos Ferreira and Mina Teicher and Yevgeny Beiderman},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5035 of file myref.bib
+ : 
+ : %author = {Martin Schaffer and Marcus Grosse and Richard Kowarschik},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5067 of file myref.bib
+ : 
+ : %author = {Rich\'{a}rd S\'{e}fel and J\'{a}nos Kornis},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5099 of file myref.bib
+ : 
+ : %author = {Guijin Wang and Xuanwu Yin and Xiaokang Pei and Chenbo Shi},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5131 of file myref.bib
+ : 
+ : % author = {Muquit, Mohammad Abdul and Shibahara, Takuma and Aoki, Takafumi},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5171 of file myref.bib
+ : 
+ : %author = {Marcus Grosse and Johannes Buehl and Holger Babovsky and Armin Kiessling and Richard Kowarschik},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5203 of file myref.bib
+ : 
+ : %author = {P.Pohl},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 5229 of file myref.bib
+ : 
+ : %author = {Pascal JI},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 5 entries,
+            2937 wiz_defined-function locations,
+            708 strings with 5902 characters,
+and the built_in function-call counts, 1561 in all, are:
+= -- 146
+> -- 33
+< -- 2
++ -- 14
+- -- 9
+* -- 99
+:= -- 217
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 6
+chr.to.int$ -- 3
+cite$ -- 5
+duplicate$ -- 49
+empty$ -- 189
+format.name$ -- 12
+if$ -- 409
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 6
+newline$ -- 23
+num.names$ -- 5
+pop$ -- 37
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 100
+stack$ -- 0
+substring$ -- 103
+swap$ -- 10
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 13
+width$ -- 6
+write$ -- 48
+(There were 173 error messages)

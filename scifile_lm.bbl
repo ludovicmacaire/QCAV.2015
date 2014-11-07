@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Astarita:2012}
+T.~Astarita, A scheimpflug camera model for stereoscopic and tomographic
+  \textsc{PIV}, in: Proceedings of the 16th Int Symp on Applications of Laser
+  Techniques to Fluid Mechanics, 2012, pp. 1--9.
+
+\bibitem{Salvi:2000}
+X.~Armangué, J.~Salvi, J.~Batlle, A comparative review of camera calibrating
+  methods with accuracy evaluation, Pattern Recognition 35 (2000) 1617--1635.
+
+\bibitem{Prasad95}
+A.~K. Prasad, K.~Jensen, Scheimpflug stereocamera for particle image
+  velocimetry in liquid flows, Applied Optics 34~(30) (1995) 7092--7099.
+
+\bibitem{Zhang:2000:FN}
+Z.~Zhang, A flexible new technique for camera calibration, IEEE Trans. Pattern
+  Anal. Mach. Intell. 22~(11) (2000) 1330--1334.
+
+\bibitem{Hartley:2003:MVG}
+R.~Hartley, A.~Zisserman, Multiple View Geometry in Computer Vision, 2nd
+  Edition, Cambridge University Press, New York, NY, USA, 2003.
+
+\end{thebibliography}
